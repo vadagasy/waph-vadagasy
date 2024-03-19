@@ -8,7 +8,7 @@
 
 **Email**: vadagasy@mail.uc.edu
 
-![Srujana](image/headshot.jpg){width=150px height=150px}
+/*![Srujana](image/headshot.jpg){width=150px height=150px}*/
 
 # Lab 1 - Foundations of the Web
 
@@ -84,7 +84,7 @@ Included file `helloworld.c`:
 a. PHP is a programming language used to create server-side web applications. I have developed a straightforward PHP web application that accepts user input as part of assignment 2. I installed PHP and set it up with ApacheServer for that. Subsequently, I used subl to construct helloworld.php. Helloworld and my name, Srujana, are included in the sample code that I used.After copying it to /var/www/html, it was deployed by utilizing the localhost address and the.php file name to check in a browser.
 
 
-![PHP web application](images/php.png)
+![PHP web application](image/php.png)
 
 Included file `helloworld.php`:
 ```PHP
@@ -123,9 +123,9 @@ curl -X POST localhost/echo.php -d "data=Srujana"
 
 Here the network packets were analyzed and the HTTP stream was captured.
 
-![HTTP POST request using CURL](images/curl.png)
+![HTTP POST request using CURL](image/curl.png)
 
-![HTTP Stream in Wireshark](images/curl1.png)
+![HTTP Stream in Wireshark](image/curl2.png)
 
 c.The GET and POST methods are similar in that
 1. Both are utilized for file uploads and data transfers between the client and server.
