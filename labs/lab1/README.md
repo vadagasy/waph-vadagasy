@@ -8,7 +8,7 @@
 
 **Email**: vadagasy@mail.uc.edu
 
-/*![Srujana](image/headshot.jpg){width=150px height=150px}*/
+![Srujana](image/srujana.jpg){width=150px height=150px}
 
 # Lab 1 - Foundations of the Web
 
@@ -69,9 +69,12 @@ Included file `helloworld.c`:
 ```C
     #include<stdio.h>
     int main() {
-    const char *htmlContent = "<!DOCTYPE html> <html> <head> <title>Web Application Programming and Hacking</title>"
+    const char *htmlContent = "<!DOCTYPE html> <html> <head> <title>Web Application 
+                              Programming and Hacking</title>"
                               "</head> <body> <h1>Student: Srujana</h1>"
-                              "<p>This exercise is done as part of Lab1 assessment i.e CGI Web Applications with C.</p></body></html>";
+                              "<p>This exercise is done as part of Lab1 
+                              assessment i.e CGI Web Applications with C.
+                              </p></body></html>";
 
     printf("Content-Type: text/html\n\n");
     printf("%s", htmlContent);
