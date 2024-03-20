@@ -53,7 +53,7 @@ when compared it is observed that telent request was lacking server information.
 
 ### Task 1: CGI Web applications in C
 
-a. Using CGI I've created a C program that prints the following message: "Hello World CGI! Regards, Srujana, WAPH." Subl has been used to write this sentence in C. GCC was then installed in order to compile the.c program. The.cgi file has been copied to the path /usr/lib/cgi-bin once the program has been executed. I entered the localhost and the name of the.cgi file in the browser to access it, and the output appeared as follows:
+a. Using CGI I've created a C program that prints the following message: "Hello World CGI! Regards, Srujana, WAPH." Subl has been used to write this sentence in C. GCC was then installed in order. This .cgi is been cpoied to path /usr/lib/cgi-bin once the program has been executed. I entered the localhost and the name of the.cgi file in the browser to access it, and the output appeared as follows:
 
 
 ![CGI in C](image/cgi.png)
@@ -94,7 +94,7 @@ Included file `helloworld.php`:
 ?>
 ```
 
-b. As part of homework, I Copyied the.php file  created newly to the directory /var/www/html allows PHP to use $_REQUEST('data') to analyze the path variables in GET and POST.I entered the filename, the localhost IP address, and a? with the name in the browser.Confidentiality-related security risks, such as data manipulation and remote code execution. By completing input validation, preparing statements for SQL inputs, and cleaning user inputs, these risks can be minimized.
+b. As part of homework, I Copied a .php file  created newly to the directory /var/www/html allows PHP to use $_REQUEST('data') to analyze the GET and POST request path variables.I entered the filename, the localhost IP address, and a? with the name in the browser.Confidentiality-related security risks, such as data manipulation. By validating the input, preparing statements for inputs of SQL, cleaning user provided inputs, these risks can be minimized.
 
 
 ![PHP web application with echo](image/php1.png)
@@ -108,7 +108,7 @@ Included file `echo.php`:
 ```
 
 ### Task 3: Understanding the HTTP GET and POST Requests
-a. I've now grasped the fundamentals of GET and POST requests and have used Wireshark to analyze packets using GET and POST calls.
+a. I've now grasped the fundamentals of requests using GEt and POST and have used Wireshark to analyze packets using GET and POST calls.
 Initially, an HTTP GET request was made, and IPaddress/echo.php?data="value" was used to supply the path variable.
 Instead of value, the user might supply personalized information. I've included my name as a value in the example. Following that, the stream packets for the HTTP request and HTTP response were recorded and examined. The screenshots are attached below.
 
@@ -117,12 +117,11 @@ Instead of value, the user might supply personalized information. I've included 
 
 ![HTTP response in WireShark](image/http1.png)
 
-b. Data is processed using many network protocols by a command-line application named Client URL of Curl. Through the terminal, I have sent a post request to echo.php with CURL.
+b. Data is processed using many network protocols by a command-line application named Client URL of Curl. Through the terminal, using Curl i have done a post request.
 
 
 curl -X POST localhost/echo.php -d "data=Srujana"
 
-Here the network packets were analyzed and the HTTP stream was captured.
 
 ![HTTP POST request using CURL](image/curl.png)
 
