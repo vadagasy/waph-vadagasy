@@ -13,8 +13,7 @@
 # Lab 1 - Foundations of the Web
 
 ## Overview : 
-This lab delves deeper into front-end web application development. As part of Lab 1, I learned how to use TELNET to analyze network packets using a wireshark program based on HTTP requests and responses and compare them with requests sent by browsers.
-I completed hands-on practice with CGI applications in HTML and C within Part 2 of Lab 1. In addition, this lab covered the construction of PHP web applications. learned how to use curl and the wireshark tool to become acquainted with HTTP GET and POST requests in part 3. The pandoc program was used to create the PDF file after all relevant screenshots had been taken and added, and the content had been prepared in markdown.
+This lab delves deeper into front-end web application development. From the first lab, i explored more on Telnet and its usage to analyse network packets with the wireshark tool based on HTTP requests and responses and compare them with requests sent by browsers. I completed hands-on practice with CGI applications in HTML and C within Part 2 of Lab 1. In addition, this lab covered the construction of PHP web applications. learned how to use curl and the wireshark tool to become acquainted with HTTP GET and POST requests in part 3. 
 
 
 [https://github.com/vadagasy/waph-vadagasy/blob/main/labs/lab1/README.md](https://github.com/vadagasy/waph-vadagasy/blob/main/labs/lab1/README.md)
@@ -27,7 +26,7 @@ I completed hands-on practice with CGI applications in HTML and C within Part 2 
 
 Network packet analysis is the focus of the Wireshark utility. I loaded and launched the application to capture packets in order to become acquainted with this program. I initially set the filter option to any to record all packets. After that, I started using the search box to enter HTTP in order to capture packets and filter data.
 
-The hostname, source, destination, ports, and HTTP version are all included in the HTTP request. and the identical source and destination IP addresses, ports, content type, and status code are all included in the answer.
+The hostname, source, destination, ports, and HTTP version are all included in the HTTP request and the same paramanters are included in the answer
 By clicking on the response and moving to the follow http stream, the HTTP format was also recorded.
 
 
@@ -38,10 +37,9 @@ By clicking on the response and moving to the follow http stream, the HTTP forma
 ![Wireshark HTTP Responseformat](image/wireshark2.png)
 
 ### Task 2. Understanding HTTP using telnet and Wireshark
-We started Wireshark to capture the network packets before issuing an HTTP request via TELNET over the console to example.com or index.html. To use TELNET, first a connection was established to the example.com web server. Applying the portNumber syntax from example.com on telnet. After the connection was established, the type of request, path file, http version, and host name were supplied for sending the HTTP request. And the response was obtained after hitting Enter twice.
+I learned how to capture network pacteks using wireshark there i initially started the wireshark tool and did telnet to example.com or index.html files along with the port number. After establishing the connection i was able to see the request type , path file , version of http and name of the host.After this i clicked the enter button twice to see the response.
 
-When comparing the HTTP queries sent through the browser with TELNET in Wireshark, it is seen that the telnet request was lacking server information. The telnet HTTP request is made manually, in contrast to the browser, which automatically fills in request headers such user-agent, accept, accept-language, authorization, etc.
-
+when compared it is observed that telent request was lacking server information.
 
 ![Telnet HTTP Request](image/telnet.png)
 
@@ -84,7 +82,7 @@ Included file `helloworld.c`:
 
 ### Task 2: A Simple PHP Web application with User input
 
-a. PHP is a programming language used to create server-side web applications. I have developed a straightforward PHP web application that accepts user input as part of assignment 2. I installed PHP and set it up with ApacheServer for that. Subsequently, I used subl to construct helloworld.php. Helloworld and my name, Srujana, are included in the sample code that I used.After copying it to /var/www/html, it was deployed by utilizing the localhost address and the.php file name to check in a browser.
+a. PHP is a programming tool used to create server-side web applications. I have developed a straightforward web application using PHP that accepts user input. As part of assignment 2 installation of PHP and apacheserver setup is done. Subsequently, I used subl to construct helloworld.php. Helloworld and my name, Srujana, are included in the sample code that I used.After copying it to /var/www/html, it was deployed by utilizing the localhost address and the.php file name to check in a browser.
 
 
 ![PHP web application](image/php.png)
@@ -96,7 +94,7 @@ Included file `helloworld.php`:
 ?>
 ```
 
-b. As part of homework, a PHP echo web application has been developed to output the path variable that was sent along with the http request. Copying the.php file to the directory /var/www/html allows PHP to use $_REQUEST('data') to capture the path variables in GET and POST requests.I entered the filename, the localhost IP address, and a? with the user input (name) in the browser.Confidentiality-related security risks, such as data manipulation, SQL injections, and remote code execution. By completing input validation, preparing statements for SQL inputs, and cleaning user inputs, these risks can be minimized.
+b. As part of homework, I Copyied the.php file  created newly to the directory /var/www/html allows PHP to use $_REQUEST('data') to analyze the path variables in GET and POST.I entered the filename, the localhost IP address, and a? with the name in the browser.Confidentiality-related security risks, such as data manipulation and remote code execution. By completing input validation, preparing statements for SQL inputs, and cleaning user inputs, these risks can be minimized.
 
 
 ![PHP web application with echo](image/php1.png)
