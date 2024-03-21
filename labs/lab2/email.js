@@ -5,7 +5,7 @@ if (shown){
 shown = false;
 }else{
 var myemail = "<a href='mailto:vadagasy"+ "@" +
-"uc.edu'>vadagasy" + "@" + "vadagasy@mail.uc.edu</a>" ;
+"uc.edu'>vadagasy" + "@" + "mail.uc.edu</a>" ;
 document.getElementById('email').innerHTML= myemail;
 shown = true;
 }
