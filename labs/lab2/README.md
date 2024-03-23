@@ -69,6 +69,9 @@ Here are some images of what happened when I used AJAX to request this informati
 ![Ajax response](images/10.png)
 
 ### b. CSS 
+I also tried the basic style i.e CSS1 for the waph-vadagasy.html and the output is attached below.
+
+![Adding Style to Webpage](images/CSS1.png)
 
 In this section 2b, I focused on making the website seem better. First, I created a simple example to demonstrate how to alter the background color using inline CSS. Later, I added more styles to the homepage using the "<style>" element in the head section.
 
