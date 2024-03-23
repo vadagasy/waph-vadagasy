@@ -65,12 +65,14 @@ For that we have used input function and button to send the GET request to echo.
 Below are the screenshots of the output response which was made through Ajax request.
 
 
+![Ajax response](images/Ajax request network1.png)
 ![Ajax response](images/Ajax request network.png)
 
 ### b. CSS 
 
 As a part of this section i tried to add styling to the webpage. Initially a demo was created with the usage of inline CSS by changing the background color. Then after the <style> element in head section was used to style the webpage. 
 
+![Adding Style to Webpage](images/CSS 2bi code.png)
 ![Adding Style to Webpage](images/CSS 2bi.png)
 
 
@@ -79,6 +81,7 @@ As a part of this section i tried to add styling to the webpage. Initially a dem
 Learned about the jQuery library after that. This library can be used to choose HTML elements; it takes the place of functions like document.getElementById. This also serves as a convenient way to make ajax requests to the backend without having to create an instance of xmlhttprequest and write event handlers for it.
 Created a jquery Get and post Request and the reponses have been captured in the below screenshot.
 
+![JQuery GET request response](images/Jquery post nd get code.png)
 
 ![JQuery GET request response](images/Jquery get request.png)
 
@@ -91,9 +94,12 @@ For this is to execute we have took some API's which are of free and tried to fe
 
 The first API displays the programming joke of the day which ia a free source api and the JSON object joke has been used to print the response.
 
-![API Webpage-Joke of the day](images/JokeofthedayAPI.png)
+![API Webpage-Joke of the day](images/joke code.png)
 
-![API Response-Joke of the day](images/JokeofthedayAPI.png)
+![API Response-Joke of the day](images/joke console.png)
+
+![API Response-Joke of the day](images/joke output.png)
+
 
 
 
