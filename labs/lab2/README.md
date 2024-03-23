@@ -60,48 +60,48 @@ The output of the above code is displayed as below
 
 ### a: Ajax
 
-After the JS and HTML i got familiarized with AJAX. Ajax is employed to retrieve data and send asynchronous requests to the server. To perform these calls, it uses the XMLHTTPRequest Object. The benefit is that we can dynamically change our website's content without having to reload the entire page.
-For that we have used input function and button to send the GET request to echo.php file which was created as a part of Lab1 and the response has been captured through the inspect element.
-Below are the screenshots of the output response which was made through Ajax request.
+After learning JavaScript and HTML, I began utilizing AJAX. AJAX allows us to retrieve data and communicate with the server without waiting. To do this, it makes use of the XMLHTTPRequest Object. This implies I may alter the content on our website without having to reload the entire page. I accomplished this by utilizing a custom input box and a button to request information from a file called echo.php, which I created in our first lab. Then I examined the responses by inspecting a section of the browser. 
+Here are some images of what happened when I used AJAX to request this information.
 
 
-![Ajax response](images/Ajax request network1.png)
-![Ajax response](images/Ajax request network.png)
+![Ajax response](images/9.png)
+![Ajax response](images/10.png)
 
 ### b. CSS 
 
-As a part of this section i tried to add styling to the webpage. Initially a demo was created with the usage of inline CSS by changing the background color. Then after the <style> element in head section was used to style the webpage. 
+In this section 2b, I focused on making the website seem better. First, I created a simple example to demonstrate how to alter the background color using inline CSS. Later, I added more styles to the homepage using the "<style>" element in the head section.
 
-![Adding Style to Webpage](images/CSS 2bi code.png)
-![Adding Style to Webpage](images/CSS 2bi.png)
+![Adding Style to Webpage](images/11.png)
+![Adding Style to Webpage](images/12.png)
 
 
 ### c: JQuery
 
-Learned about the jQuery library after that. This library can be used to choose HTML elements; it takes the place of functions like document.getElementById. This also serves as a convenient way to make ajax requests to the backend without having to create an instance of xmlhttprequest and write event handlers for it.
-Created a jquery Get and post Request and the reponses have been captured in the below screenshot.
+I then began working on the jQuery library. You may use this library in place of methods like `document.getElementById} to assist in selecting HTML elements. Additionally, it simplifies the process of sending AJAX queries to the backend by eliminating the need to create an instance of `XMLHttpRequest` and provide event handlers for it. I sent out a jQuery GET and POST request, and the screenshot below shows you what I got back.
 
-![JQuery GET request response](images/Jquery post nd get code.png)
+![JQuery GET request response](images/13.png)
 
-![JQuery GET request response](images/Jquery get request.png)
+![JQuery GET request response](images/14.png)
 
-![JQuery POST request response](images/Jquery post request.png)
+![JQuery POST request response](images/15.png)
 
 
 ### d:  Web API integration
-Lastly, the studied  is about the JavaScript built-in fetch API, which can be utilized in place of the xhr. The promise is returned by the retrieve() method. Thus, to create asynchronous behavior, we can use async await keywords in place of callback methods.
-For this is to execute we have took some API's which are of free and tried to fetch the data. Json objects have been used to retrieve the data from the response of the API.
+At last, I got to know that the integrated JavaScript Fetch API may be utilized in place of the outdated XMLHttpRequest (XHR). Instead of depending on callback functions for asynchronous activities, we may utilize the 'async' and 'await' keywords thanks to the Fetch API, which delivers a promise from the 'fetch()' method.
 
-The first API displays the programming joke of the day which ia a free source api and the JSON object joke has been used to print the response.
-
-![API Webpage-Joke of the day](images/joke code.png)
-
-![API Response-Joke of the day](images/joke console.png)
-
-![API Response-Joke of the day](images/joke output.png)
+I fetched data using a few free APIs to put this into practice. In order to retrieve data from the API answers, I worked with JSON objects.
 
 
+I get the daily joke about programming from the first API I tested. I utilized the free-source API's 'joke' JSON property to show the joke in the response.
+
+![API Webpage-Joke of the day](images/16.png)
+
+![API Response-Joke of the day](images/17.png)
+
+![API Response-Joke of the day](images/18.png)
 
 
-The Second API is to get the age by taking name as input. An random age will be fetched based on the age Json oject.
+
+
+Inorder to know the age ,it is used in Second API.Which is done by taking name as the input , and the output for that is a random age of a person generated by the JSON object.
 
