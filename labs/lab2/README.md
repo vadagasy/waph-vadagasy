@@ -13,7 +13,8 @@
 # Lab 2 - Front-end Web Development
 
 ## Overview : 
-This lab delves deeper into front-end web application development. In connection with Lab 2, I understood how to develop a web application using few basic HTML tags and javasrcipt by inlcuding images and forms and created a HTTP GET and POST request and further analyzed the the request, response, status code through the inspect element. After that Ajax , CSS and Jquery has been used to enhance the web application and make the code easy. . The pandoc tool was used to create the PDF file after all relevant screenshots had been taken and added, and the content had been prepared in markdown.
+This lab explores the construction of front-end web applications in further detail. In relation to Lab 2, I learned how to make a web application by incorporating images and forms with a few simple HTML tags and JavaScript. I also made an HTTP GET and POST request and used the inspect element to further evaluate the request, response, and status code. Subsequently, Jquery, CSS, and Ajax were utilized to improve the online application and simplify the code. After all pertinent screenshots were captured and included, and the material was produced in markdown, the pandoc tool was used to build the PDF file.
+
 
 
 [https://github.com/challans216/waph-challans/blob/main/lab/lab2/README.md](https://github.com/challans216/waph-challans/blob/main/lab/lab2/README.md)
