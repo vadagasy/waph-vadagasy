@@ -33,15 +33,25 @@ The code for the straightforward http form in the following image reroutes the e
 ![Resultant webpage](images/3.png)
 
 ### b. JavaScript
-Following that, we discovered how to incorporate JavaScript code into our webpages.Through the use of an internal script tag in the HTML page, via inline javascript.- generating a file with the.js extension and use the script tag to reference it.- using HTTP to access external JavaScript files.
+The code we wrote for inline JS to log a message to the console upon a text input's keypress event is shown in the following image.
 
+![Before clicking on the showdate and email](images/4.png)
 
+The above code is implemented and is shown as below
 
-![Before clicking on the showdate and email](images/Task1 b.png)
+![Date](images/5.png)
 
-![After clicking on showdate and email](images/task 1 b1.png)
+The below image shows inline js that has been written to show date on mouse click
 
-![Screenshot of analog and digital clock](images/task 1b2.png)
+![Screenshot show date](images/6.png)
+
+The below image displays the code for analog and the digital clock
+
+![Screenshot clocks](images/7.png)
+
+The output of the above code is displayed as below
+
+![Screenshot clocks](images/8.png)
 
 
 
