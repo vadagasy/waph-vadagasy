@@ -8,7 +8,7 @@
 
 **Email**: vadagasy@mail.uc.edu
 
-![Srujana](image/srujana.jpg)
+![Srujana](images/srujana1.jpg)
 
 
 # Lab 2 - Front-end Web Development
