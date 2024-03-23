@@ -24,13 +24,13 @@ This lab delves deeper into front-end web application development. In connection
 
 ### a. HTML
 
-As a part of this task i have created a lab2 folder in lab folder and created a simple HTML file with few basic tags.Here i have learned how to use the tags appropriately. I got familiarized with the insertion of link in html , images, and other content.Here form has also been introduced and HTTP GET and POST has been performed on the echo.php file which was already created during lab1 and the responses have been captured. Once the code has been done i used a command to copy the code to path /var/www/html to get the output on browser.
+The code for the straightforward http form in the following image reroutes the echo.php file that we produced in the previous lab upon submission.
 
-The ouptut has been captured on the browser as shown in the below screenshot.
+![Code for HTML page creation](images/1.png)
 
-![Code for HTML page creation](images/task 1ac.png)
+![Resultant webpage](images/2.png)
 
-![Resultant webpage](images/task 1a.png)
+![Resultant webpage](images/3.png)
 
 ### b. JavaScript
 Following that, we discovered how to incorporate JavaScript code into our webpages.Through the use of an internal script tag in the HTML page, via inline javascript.- generating a file with the.js extension and use the script tag to reference it.- using HTTP to access external JavaScript files.
