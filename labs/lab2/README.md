@@ -18,7 +18,7 @@ This lab explores the construction of front-end web applications in further deta
 
 
 
-[https://github.com/challans216/waph-challans/blob/main/lab/lab2/README.md](https://github.com/challans216/waph-challans/blob/main/lab/lab2/README.md)
+[https://github.com/vadagasy/waph-vadagasy/blob/main/lab/lab2/README.md](https://github.com/vadagasy/waph-vadagasy/blob/main/lab/lab2/README.md)
 
 
 
