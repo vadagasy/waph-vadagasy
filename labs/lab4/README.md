@@ -14,23 +14,50 @@
 # Lab 2 - Front-end Web Development
 
 ## Overview : 
-This lab explores the construction of front-end web applications in further detail. In relation to Lab 2, I learned how to make a web application by incorporating images and forms with a few simple HTML tags and JavaScript. I also made an HTTP GET and POST request and used the inspect element to further evaluate the request, response, and status code. Subsequently, Jquery, CSS, and Ajax were utilized to improve the online application and simplify the code. After all pertinent screenshots were captured and included, and the material was produced in markdown, the pandoc tool was used to build the PDF file.
+This lab gave me knowledge. Understanding session management for PHP web application testing and deployment. I saw the post-test session using Wireshark. identifying session-jacking. In part two, I learned about the security of the session, session authentication, and authentication in Unsecured Session Part 3. Together with screenshots of the attacks, all of these have been documented in the README file. After all pertinent screenshots were captured and included, and the material was produced in markdown, the pandoc tool was used to build the PDF file.
 
 
 
-[https://github.com/vadagasy/waph-vadagasy/blob/main/lab/lab2/README.md](https://github.com/vadagasy/waph-vadagasy/blob/main/lab/lab2/README.md)
+
+[https://github.com/vadagasy/waph-vadagasy/blob/main/lab/lab4/README.md](https://github.com/vadagasy/waph-vadagasy/blob/main/lab/lab4/README.md)
 
 
 
-## Task 1 : Basic HTML with forms, and JavaScript
+## Task 1 : Understanding Session Management in a PHP Web Application
 
-### a. HTML
+### 1.a. Deploy and test
 
-The code for the straightforward http form in the following image reroutes the echo.php file that we produced in the previous lab upon submission.
+To check the sessions, a file called session.php is written, deployed to the web server, and visited using a browser.
 
-![Code for HTML page creation](images/1.png)
+(images/1.png)
+ 
+session page in a different browser
 
-![Resultant webpage](images/2.png)
+(images/2.png)
+
+### 1.b Observe the Session-Handshaking using Wireshark
+The browser's session handshaking is observed using Wireshark following the deployment of the sessiontest.
+(images/3.png)
+
+(images/4.png)
+
+(images/5.png)
+
+(images/6.png)
+
+Discussion:A number of stages were engaged in the handshaking procedure. It is noticeable that the cookie is not set in the first request and that it is set in the following response that follows the request.
+
+### 1.c Understanding Session Hijacking
+Using PHPSESSID, which is obtained through document.cookie as a hack, the session is taken over.
+
+(images/7.png)
+
+(images/8.png)
+
+(images/9.png)
+
+
+
 
 ![Resultant webpage](images/3.png)
 
