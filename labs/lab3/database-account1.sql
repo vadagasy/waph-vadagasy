@@ -1,3 +1,3 @@
-create database waph1;
-	CREATE USER 'vadag'@'localhost' IDENTIFIED BY '12345';
-	GRANT ALL ON waph.* TO 'vadag'@'localhost';
+create database waph3;
+	CREATE USER 'vadagas'@'localhost' IDENTIFIED BY 'Pa$$w0rd';
+	GRANT ALL ON waph3.* TO 'vadagas'@'localhost';
