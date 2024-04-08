@@ -37,6 +37,8 @@ session page in a different browser
 
 ### 1.b Observe the Session-Handshaking using Wireshark
 The browser's session handshaking is observed using Wireshark following the deployment of the sessiontest.
+
+
 ![3](images/3.png)
 
 ![4](images/4.png)
