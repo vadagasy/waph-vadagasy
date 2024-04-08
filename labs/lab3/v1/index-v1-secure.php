@@ -16,7 +16,7 @@
 		  return FALSE;
   	}*/
   	function checklogin_mysql($username, $password) {
-		$mysqli = new mysqli('localhost','vadagasy' /*DB username*/,'Vada@16' /*DB password*/,'waph' /*DB name*/);
+		$mysqli = new mysqli('localhost','vadaga' /*DB username*/,'1234' /*DB password*/,'waph' /*DB name*/);
 				if ($mysqli->connect_errno){
 					printf("Datebase connection failed: %s\n", $mysql->connect_error);
 					exit();

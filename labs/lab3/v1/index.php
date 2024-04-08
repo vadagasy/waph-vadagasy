@@ -15,7 +15,7 @@
 		else 
 		  return FALSE;
   	}*/
-		$mysqli = new mysqli('localhost','vadagasy' /*DB username*/,'Vada@16' /*DB password*/,'waph' /*DB name*/);
+		$mysqli = new mysqli('localhost','vadag' /*DB username*/,'12345' /*DB password*/,'waph1' /*DB name*/);
 							if ($mysqli->connect_errno){
 					printf("Datebase connection failed: %s\n", $mysql->connect_error);
 					exit();
