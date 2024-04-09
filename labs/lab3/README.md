@@ -32,8 +32,8 @@ For this task, I created a file named 'database-account.sql' it contains the SQL
 
 ```
 create database waph;
-	CREATE USER 'challans'@'localhost' IDENTIFIED BY 'candy@16';
-	GRANT ALL ON waph.* TO 'challans'@'localhost';
+	CREATE USER 'vadagasy'@'localhost' IDENTIFIED BY 'Pa$$w0rd';
+	GRANT ALL ON waph.* TO 'vadagasy'@'localhost';
 ```
 
 ### Create a new table Users and insert data into the table 
@@ -70,7 +70,7 @@ index.php
 		die();
 	}
 	unction checklogin_mysql($username, $password) {
-		$mysqli = new mysqli('localhost','challans' /*DB username*/,'candy@16'
+		$mysqli = new mysqli('localhost','vadagasy' /*DB username*/,'Pa$$w0rd'
 		/*DB password*/,'waph' /*DB name*/);
 				if ($mysqli->connect_errno){
 					printf("Datebase connection failed: %s\n",
