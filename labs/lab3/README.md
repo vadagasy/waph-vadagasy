@@ -4,31 +4,31 @@
 
 ## Student
 
-**Name**: Nirosha Challa
+**Name**: Srujana Reddy
 
-**Email**: challans@mail.uc.edu
+**Email**: vadagasy@mail.uc.edu
 
-![Nirosha Challa](images/headshot.jpg){width=150px height=150px}
+![Srujana Reddy](images/headshot.jpg){width=150px height=150px}
 
 # Lab 3 - Secure Web Application Development in PHP/MySQL
 
 ## Overview : 
-This lab delves deeper into  creation of front-end web application Using PHP and MySQL. In connection with Lab 3, I understood how to analyse the vulnerabilities that are present while developing a web application and the the procedures to mitigate them. As a part of first task we developed a web application where i have performed sql injection and XSS attacks to login the system. Then after inorder to mitigate these kind of issues we tried to do input validation with the usage of prepared statements and do output sanitization. All these have been recorded in README file along with the screenshots of the attacks. The pandoc tool was used to create the PDF file after all relevant screenshots had been taken and added, and the content had been prepared in markdown.
+In this lab, I explored in creating web applications with PHP and MySQL, extending the knowledge from Lab 3. My task wasto address and find security vulnerabilities in web development. I developed a web application and tested its security by performing SQL injection and XSS attacks to bypass the login system. To counter these vulnerabilities, I implemented input validation using prepared statements and sanitized the output. I documented each step, including the attack demonstrations, in a README file. For the final documentation, I used Pandoc to convert the markdown content and screenshots into a comprehensive PDF file.
 
 
-[https://github.com/challans216/waph-challans/blob/main/lab/lab3/README.md](https://github.com/challans216/waph-challans/blob/main/lab/lab3/README.md)
+[https://github.com/vadagasy/waph-vadagasy/blob/main/lab/lab3/README.md](https://github.com/vadagasy/waph-vadagasy/blob/main/lab/lab3/README.md)
 
 
 
 ## a. DataBase Setup and Management 
 ### MySQL installation
 
-As a part of this task i have installed the mysql server as a part of instructions. After that i have checked whether i have installed it and connected with root user.
+I checked for the Mysql Installation and Installed it and verfied it bu checking it's version.
 
 ![MySql Check](images/mySqlcheck.png)
 
 ### Create a New database, Database User and permission
-As a part of this task i have created a file database-acccount.sql and provided the code to create a user name and to provide permissions for the user.With the execution of the file new user has been created and i was able to login successfully.The code has been successfully commited and pushed into github.
+For this task, I created a file named 'database-account.sql' it contains the SQL commands to create a new user and give permissions to this user.  I successfully created a new user in the database and was able to log in with that user's name and password I then committed and pushed these changes to GitHub, ensuring that the code and updates were properly versioned and stored in the repository.
 
 ```
 create database waph;
@@ -37,7 +37,7 @@ create database waph;
 ```
 
 ### Create a new table Users and insert data into the table 
-Here i have created a table users which consists of a user name and password fields.Then after i inserted a record into the table with the random username and password.With the SQL SELECT query i have retrived the data. As we can see in the below screenshot the password has been a hashed.In the first line it has been written to drop the table if its already exists in the database.
+I created a table 'users' in the database, which includes fields for the user's name and password. next, I inserted a record with a randomly chosen username and password.  I used an SQL SELECT query inorder to check it. The retrieved data, as shown in the screenshot, indicates that the password is stored in a hashed format for security.
 
 ```
 drop table if exists users;
@@ -54,7 +54,7 @@ INSERT INTO users(username,password) VALUES ('admin',md5('MyPa$$w0rd'));
 
 
 ## b. A Simple (Insecure) Login System with PHP/MySQL
-Here inorder to work on the database programming i have installed php-mysqli web driver and created a form and index.php. Form consists of details related to login page . Index.php consists of a checklogin function which is used to check the login details.
+To work with database programming, I installed the PHP-MySQLi extension, which enables PHP to interact with MySQL databases. Then, I created a form that serves as a login page, which collects username and password. Next, I created an `index.php` file that contains a `checklogin` function. This function is tasked with verifying the login details submitted through the form, checking them against the database to authenticate users.
 
 ```
 index.php
@@ -96,10 +96,7 @@ form.php
 
 ### Sql injection attacks
 
- These type of attcaks happen due to lack of input validation , when the input is not properly validated attackers can exploit this by injecting 
- SQL code into the input query.
- It there is a usage of plain sql queries which will concatenate with the user input can lead to this attack.
- Security is most important while developing the application if there are no active measures taken properly can also lead to SQL injection attacks.
+These attacks, such as SQL injection, occur primarily because of unverified or correct input validation. Without thorough checking, attackers can take advantage of this by inserting harmful SQL code into the query inputs. The risk is especially high when applications use plain SQL queries that directly concatenate with user inputs, creating a pathway for such attacks. Ensuring security is a critical aspect of application development, and the absence of proactive security measures can significantly increase the vulnerability to SQL injection attacks.
 
 ![SQL injection attack](images/c1.png)
 
@@ -116,8 +113,10 @@ form.php
 ## d.Prepared Statement Implementation
 
 ### Prepared Statement for SQL Injection Prevention
-Here i have used the prepared statements inorder to sanitize the output to avoid vulnerabities with the sql inject attacks
-the below code has been utilized to avoid the sql injection attacks.
+I utilized prepared statements to sanitize the output and avoid vulnerabilities with SQL injection attacks.
+The code below has been used to prevent SQL injection attacks.
+
+
 
 code:
 ```
@@ -134,28 +133,28 @@ Invalid login with implementation of Prepared statement
 Logged in succesfully  with the implementation of prepared statements after providing correct credentials.
 
 ### Security Analysis
-Prepared Statement Explanation:
- Since the prepared statements use the parametrized queries where the sql code  and user input are kept separate. 
- Prepared statements will also use escaping concept for the user input.Since these escaping concept involves modifying the special characters in 
- user input.
- They can also provide protection irrespective of the data type.
-
-
+Explaination of Prepared Statements: 
+The prepared statements employ parametrized queries, which keep user input and SQL code apart. 
+The escaping notion will also be used to user input in prepared sentences.Given that various escape concepts need changing the special characters that users enter.
+ 
 Implement Sanitization : 
-Apart from the SQLi vulnerability, this line <h2> Welcome <?php echo $_POST["username"]; ?> !</h2> in index.php is vulnerable for XSS attack as the input varible is diplayed directly. To overcome this I have used htmlspecialchars which convert the specical characters to their corresponding HTML entities, ensuring that they are treated as plain text and not interpreted as HTML tags.
+This line <h2> Welcome \?php echo $_POST["username"];?> besides the SQLi vulnerability</h2> since the input variable is shown immediately in index.php, making it susceptible to XSS attacks. In order to get around this, I've utilized htmlspecialchars, which translate the special characters into the appropriate HTML entities so that they're seen as plain text rather than HTML tags.
+
+
 ```
 <h2> Welcome <?php echo $_POST["username"]; ?> !</h2>
 
 ```
-![Login by implementing Sanitization](images/d3.png)
+![Login by implementing Sanitization](images/d2.png)
 
 Discussions
 
 what if the username/password are empty?
-Before attempting to use the username and password fields in the checklogin_mysql() function, the code does not verify to see if they are empty. This could result in unexpected actions or mistakes if the user sends the form with no information entered.
+The code does not check to see if the username and password fields in the checklogin_mysql() method are empty before attempting to utilize them. In the event that the user submits the form without entering any information, this might lead to unanticipated consequences or errors.
 
 what if there are any database errors?
-The code does not handle other possible database failures that can arise during query execution, even if it does include error handling for failed database connections ($mysqli->connect_error). For instance, the code fails silently and does not notify the user if there is a syntax error in the SQL query or if there is a problem with the database server.
+Even while the code includes error handling for unsuccessful database connections ($mysqli->connect_error), it does not handle other possible database failures that may occur during query execution. For example, when there is a syntax mistake in the SQL query or when the database server is having issues, the code fails quietly and doesn't alert the user.
+
 
 what if the provided username is not exactly the same as the username from the database.?
-It is deemed insecure to save passwords using the MD5 hash without salting them. Fast hashing method MD5 is susceptible to rainbow table and brute-force attacks. To improve security, it is advised to use more powerful hashing algorithms, such as bcrypt or Argon2, with a different salt for every password. When the username and password precisely match the input entered, the code fetches user records from the database. This indicates that usernames are case-sensitive, which may cause problems with authentication if the user's username and the one that the database stores are different.
+Because MD5 hashes quickly and doesn't need salting, it is seen as risky when used to store passwords. It is also susceptible to brute-force and rainbow table attacks. It is advised to use more secure hashing algorithms, such as Argon2 or bcrypt, to increase security. These techniques each need a different salt for each password. Case sensitivity in username authentication is highlighted by the existing system, which obtains user records from the database only if the supplied and stored usernames and passwords exactly match. If there is a difference in case between the username that the user entered and the one that is kept in the database, this might cause problems.
