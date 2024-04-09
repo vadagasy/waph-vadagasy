@@ -8,7 +8,7 @@
 
 **Email**: vadagasy@mail.uc.edu
 
-![Srujana Reddy](images/headshot.jpg){width=150px height=150px}
+![Srujana Reddy](images/headshot.jpg)
 
 # Lab 3 - Secure Web Application Development in PHP/MySQL
 
